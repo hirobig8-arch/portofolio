@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: white;
+}
+
+
+/* NAVBAR */
+
+nav {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10%;
+
+    position: fixed;
+    top: 0;
+
+    background-color: rgba(13, 17, 23, 0.95);
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.logo span {
+    color: #00d4ff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00d4ff;
+}
+
+
+/* HOME */
+
+.home {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 100px 10%;
+}
+
+.home-text {
+    width: 55%;
+}
+
+.home-text p {
+    color: #b8b8b8;
+    margin-bottom: 10px;
+}
+
+.home-text h1 {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.home-text h2 {
+    color: #00d4ff;
+    margin-bottom: 20px;
+}
+
+.deskripsi {
+    line-height: 1.7;
+    max-width: 550px;
+}
+
+.btn {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 12px 25px;
+
+    background-color: #00d4ff;
+    color: #000;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background-color: white;
+}
+
+
+/* FOTO PROFIL */
+
+.home-image img {
+    width: 300px;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #00d4ff;
+
+    box-shadow: 0 0 30px #00d4ff;
+}
+
+
+/* SECTION */
+
+section {
+    padding: 100px 10%;
+}
+
+.judul {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.judul span {
+    color: #00d4ff;
+}
+
+
+/* ABOUT */
+
+.about {
+    background-color: #161b22;
+}
+
+.about-box {
+    max-width: 800px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.about-box p {
+    color: #c9c9c9;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+
+/* SKILLS */
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    width: 220px;
+
+    padding: 30px 20px;
+
+    background-color: #161b22;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+.skill-card h3 {
+    color: #00d4ff;
+
+    margin-bottom: 15px;
+}
+
+
+/* PROJECT */
+
+.project {
+    background-color: #161b22;
+}
+
+.project-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 300px;
+
+    padding: 30px;
+
+    background-color: #0d1117;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    color: #00d4ff;
+
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #b8b8b8;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.project-card button {
+    padding: 10px 20px;
+
+    border: none;
+
+    background-color: #00d4ff;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: #b8b8b8;
+}
+
+.social {
+    margin-top: 25px;
+}
+
+.social a {
+    display: inline-block;
+
+    margin: 10px;
+
+    padding: 10px 20px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 1px solid #00d4ff;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.social a:hover {
+    background-color: #00d4ff;
+    color: black;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background-color: #161b22;
+
+    color: #888;
+}
+
+
+/* RESPONSIVE HP */
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 0 5%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        padding-top: 120px;
+    }
+
+    .home-text {
+        width: 100%;
+
+        margin-top: 30px;
+    }
+
+    .home-text h1 {
+        font-size: 45px;
+    }
+
+    .home-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+}
